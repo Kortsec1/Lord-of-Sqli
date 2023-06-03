@@ -28,12 +28,16 @@
 `id` | 1234
 `pw` | 1234') or id=('admin
 
-GET으로 받아온 pw값을 쿼리 안에서 괄호로 감싼다.
+
+GET으로 받아온 pw값을 쿼리 안에서 괄호로 감싼다.<br>
 -> 동일하게 괄호를 닫아주고 문장을 자연스럽게 연결해주면 된다.
+
 
 해당 값을 보내면, query 속 조건은 다음과 같다.
 
+
 **select id from prob_cobolt where id='1234' and pw=md5('1234') or id=('admin')**
 
-`or`을 기준으로 왼쪽 `id='1234' and pw=md5('1234')`이 거짓, 오른쪽 `id=('admin')`이 참이므로
+
+`or`을 기준으로 왼쪽 `id='1234' and pw=md5('1234')`이 거짓, 오른쪽 `id=('admin')`이 참이므로<br>
 참인 조건에 의거 'admin'을 불러오게 된다.
