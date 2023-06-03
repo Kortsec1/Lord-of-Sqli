@@ -30,7 +30,7 @@
 
 해당 값을 보내면, query 속 조건은 다음과 같다.
 
-**select id from prob_gremlin where <span style="color:blue">id='1234' and pw='1234'</span> or <span style="color:red">'1'='1' </span>**
+**select id from prob_gremlin where id='1234' and pw='1234' or '1'='1'**
 
-조건문은 <span style="color:blue">파랑</span>부분과, <span style="color:red">빨강</span>부분으로 나누어 생각하면 쉽다.
+조건문은 `id='1234' and pw='1234'`와 `'1'='1'`부분으로 나누어 생각하면 쉽다.
 두 조건문 중 하나만 참이어도 참이 되므로, id를 가져오게 된다.
