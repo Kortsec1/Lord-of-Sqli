@@ -29,6 +29,7 @@
 가장 기본적인 sql-injection예제이다.
 
 해당 값을 보내면, query 속 조건은 다음과 같다.
+
 **select id from prob_gremlin where <span style="color:blue">id='1234' and pw='1234'</span> or <span style="color:red">'1'='1' </span>**
 
 조건문은 <span style="color:blue">파랑</span>부분과, <span style="color:red">빨강</span>부분으로 나누어 생각하면 쉽다.
