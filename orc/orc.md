@@ -43,7 +43,7 @@ Python을 이용하여 크게 총 두 번의 sqli를 진행할 것이다.
 
 이후, 비교값 `i`는 반복문을 통해 적당값(ex. 1~20)을 넣어준다.
 
-```pyhton
+```python
 import requests
 
 cookie = {'PHPSESSID' : '~~~~'}
