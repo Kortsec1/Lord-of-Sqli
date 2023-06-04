@@ -1,6 +1,6 @@
 import requests
 
-cookie = {'PHPSESSID' : 'du3dh0v3sk4tk5msclmdm4q3bm'}
+cookie = {'PHPSESSID' : '~~~~'}
 
 for i in range(1,21):
     url = "https://los.rubiya.kr/chall/orc_60e5b360f95c1f9688e4f3a86c5dd494.php?\
