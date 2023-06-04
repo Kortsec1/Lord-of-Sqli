@@ -37,7 +37,8 @@ mysql> select * from user where id='adMIn';
 ```
 
 `adMin`, `AdMin`, `Admin`과 같은 방법으로 대문자를 섞어서 보낸다면<br>
-php에서는 필터링에 걸리지 않지만 mysql에서는 대소문자 상관없이 처리된다.
+php에서는 필터링에 걸리지 않지만 mysql에서는 대소문자 상관없이 처리된다.<br>
+&rarr; 정확히는 정렬값이 같은 문자는 같은 문자로 취급한다.   ex. ä=a
 
 변수명 | 값
 ---|:---:
