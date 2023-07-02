@@ -57,7 +57,7 @@ select replace(replace('select replace(replace("$",char(34),char(39)),char(36),"
 
 
 실제로 해당 쿼리를 실행시켜보면, 쿼리값과 동일한 결과가 나옴을 알 수 있다.   
-'''sql
+```sql
 mysql> select replace(replace('select replace(replace("$",char(34),char(39)),char(36),"$")',char(34),char(39)),char(36),'select replace(replace("$",char(34),char(39)),char(36),"$")') as quine;
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | quine                                                                                                                                                                           |
@@ -65,7 +65,7 @@ mysql> select replace(replace('select replace(replace("$",char(34),char(39)),cha
 | select replace(replace('select replace(replace("$",char(34),char(39)),char(36),"$")',char(34),char(39)),char(36),'select replace(replace("$",char(34),char(39)),char(36),"$")') |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 1 row in set (0.00 sec)
-'''   
+```   
 
 
 이제 본격적으로 해당 쿼리를 문제에 적용시켜보자.   
