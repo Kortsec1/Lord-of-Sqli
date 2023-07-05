@@ -23,7 +23,7 @@
 
 
 ## 3. Solution
-이전 문제 <a href="./../../ouroboros/ouroboros.md">ouroboros</a>와 같은 quine 문제이다.   
+이전 문제 <a href="./../ouroboros/ouroboros.md">ouroboros</a>와 같은 quine 문제이다.   
 다른 점이라면 `replace`함수를 더이상 쓸 수 없다는 점이다.    
 
 대안으로 `concat`함수와 서브쿼리 그리고 alias가 있다.   
