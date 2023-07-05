@@ -37,3 +37,4 @@ Losi는, 다양한 조건속에서 sql-injection 기법을 연습해 볼 수 있
 - [x] <a href="./frankenstein/frankenstein.md">frankenstein</a>
 - [x] <a href="./phantom/phantom.md">phantom</a>
 - [x] <a href="./ouroboros/ouroboros.md">ouroboros</a>
+- [x] <a href="./zombie/zombie.md">zombie</a>
