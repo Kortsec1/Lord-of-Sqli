@@ -22,9 +22,12 @@
 - GET 파라미터 pw와 sql 쿼리 실행 결과의 pw가 동일하다면, 문제가 해결된다.   
 
 
-## 3. Solution
+## 3. Solution   
+
 이전 문제 <a href="./../ouroboros/ouroboros.md">ouroboros</a>와 같은 quine 문제이다.   
 다른 점이라면 `replace`함수를 더이상 쓸 수 없다는 점이다.    
+
+
 
 대안으로 `concat`함수와 서브쿼리 그리고 alias가 있다.   
 
@@ -32,6 +35,9 @@
 ' union select a from (select 'hihi' as a)as a%23
 ```
 위 쿼리의 결과로 hihi가 출력되는 것을 볼 수 있다.   
+
+
+
 
 
 이제, concat함수를 이용하면 메인코드 부분과 서브쿼리 부분을 모두 출력할 수 있다.   
@@ -42,6 +48,9 @@
 ```sql
 Pw : ' union select conct(a,a) from (select ' union select conct(a,a) from (select
 ```   
+
+
+
 
 
 마지막으로 두 가지 문제가 있다.    
@@ -55,6 +64,9 @@ Pw : ' union select conct(a,a) from (select ' union select conct(a,a) from (sele
 ```sql
 Pw : ' union select conct(a,char(34),a,char(34)) from (select "' union select conct(a,char(34),a,char(34)) from (select "
 ```
+
+
+
 
 2. 입력한 값의 마지막 부분, ` as a)as a%23`에 관한 문제
 > 간단하게 concat 함수 안에 추가해 주면 된다.    
