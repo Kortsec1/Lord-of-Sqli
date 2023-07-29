@@ -15,25 +15,14 @@
 ```
 
 ## 2. Condition
-- `prob _ . ( )`를 필터링 한다.
-- 이전 문제들과 같이 웹 방화벽이 존재한다.
+- sqlite를 사용한다.   
+- 별다른 방어책이 없다.   
 
 ## 3. Solution
-구글링을 통해 우회법을 찾아 해결하였다.   
-https://github.com/SpiderLabs/owasp-modsecurity-crs/issues/1181   
+sqlite로 바뀐것을 제외하곤, 유심히 볼 것이 없다.   
 
-
-위 참고링크에서 볼 수 있듯이 `<@`를 이용하여 문제를 해결하였다.   
 공격 코드는 다음과 같다.   
 
 변수명 | 값
 ---|---:
-`pw` | ' <@ union/**/select 'first','second
-
-
-
-`<@`이 무슨 역할인지는 다음을 참고했다.   
-https://stackoverflow.com/questions/36985926/what-does-the-operator-in-postgres-do   
-
-
-그 뒤, union select 사이에 주석 /**/을 통해 우회를 해주었다.   
+`pw` | ' or id='admin
